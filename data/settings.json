@@ -1,0 +1,18 @@
+{
+   "SPORootSite" : "tenant-name.sharepoint.com",
+   "SPOSite"     : "site-name",
+   "SPOList"     : "list-name",
+
+   "tenant_id"     : "XXXXXXXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX",
+   "tenant_domain" : "tenant-domain.com",
+
+   "client_id"         : "XXXXXXXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX",
+   "client_secret"     : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "client_thumbprint" : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+
+   "entra_applicationname" : "Entra Application Name",
+   "certificate_password"  : "Entra App Password",
+
+   "soft_run"      : true,
+   "total_records" : 1000
+}

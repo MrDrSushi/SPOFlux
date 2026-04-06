@@ -1,0 +1,31 @@
+[package]
+name = "SPOFlux"
+version = "1.0.0"
+edition = "2024"
+build = "build.rs"   # tells Cargo to run the build script
+
+[dependencies]
+csv = "1.4.0"
+rand = "0.10.0"
+chrono = "0.4.44"
+anyhow = "1.0.102"
+colored = "3.1.1"
+uuid = { version = "1.22.0", features = ["v4"] }
+tokio = { version = "1.50.0", features = ["rt-multi-thread", "rt", "macros"] }
+serde = { version = "1.0.228", features = ["derive"] }
+reqwest = { version = "0.13.2", features = ["json", "query", "form"] }
+serde_json = { version = "1.0.149", features = ["preserve_order"] }
+
+#[lints.rust]
+#unused = "allow"
+#unused_parens = "allow"
+
+[build-dependencies]
+winresource = "0.1"
+
+[package.metadata.winresource]
+FileDescription  = "Batch data flow into SPO through Graph API"
+ProductName      = "SPO List Feeder"
+ProductVersion   = "1.0"
+LegalCopyright   = "Alex Gonsales"
+OriginalFilename = "SPOFlux.exe"
