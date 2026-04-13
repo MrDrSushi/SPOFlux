@@ -116,7 +116,7 @@ async fn main() -> Result<()> {
     let mut batch_counter = 0;
     let mut payload       = json!({"requests": []});
 
-    //  Heavy collections: Locstions
+    //  Heavy collections: Locations
     //  It is a pre-processing to save time during the loop
 
     let users_id_collection : Vec<i64> = users.iter().map(|u| u.id).collect();
@@ -133,7 +133,7 @@ async fn main() -> Result<()> {
     //  Starts the loop for the creation of the records (payload creation and endpoint post request)
     //
 
-    println!("{}","\n       ▶▶▶▶  Begining batch processing . . . \n");
+    println!("{}","\n       ▶▶▶▶  Beginning batch processing . . . \n");
 
     for loop_count in 1..=total_records {
 
@@ -316,7 +316,7 @@ async fn main() -> Result<()> {
                     println!("{}", format!("              ▶▶ New token acquired, expires at {} \n", token.expires_datetime.format("%I:%M:%S %p")).bright_green());    // .format("%a, %d %b %Y %I:%M:%S %p")
                 }
 
-                // sends the requestg to the endpoint
+                // sends the request to the endpoint
 
                 match send_data(&client, &token.access_token, &payload, true, leading_zeroes).await {
                     true => {
