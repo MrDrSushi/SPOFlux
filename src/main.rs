@@ -363,10 +363,10 @@ async fn main() -> Result<()> {
                 value_status = format!("{}","   ");
             }
             else if truncate_to_msecs(avg_request_time) > truncate_to_msecs(last_avg_request_time) {
-                value_status = format!("{}","  🡵".bright_red());
+                value_status = format!("{}","  ↗".red());
             }
             else if truncate_to_msecs(avg_request_time) < truncate_to_msecs(last_avg_request_time) {
-                value_status = format!("{}","  🡶".bright_blue());
+                value_status = format!("{}","  ↙".blue());
             }
 
             // println!(
@@ -425,7 +425,7 @@ async fn main() -> Result<()> {
                 val_batch   = value_batch,
                 lbl_of      = " of ".bright_yellow(),
                 val_tbatch  = value_tbatch,
-                lbl_req     = "          request: ".bright_yellow(),
+                lbl_req     = "      request: ".bright_yellow(),
                 val_req     = value_req,
                 lbl_time    = "   ──   time: ".bright_yellow(),
                 val_time    = value_time,
@@ -438,7 +438,7 @@ async fn main() -> Result<()> {
                 lbl_status  = value_status,
                 lbl_eta     = "   ──   eta: ".bright_yellow(),
                 val_eta     = value_eta,
-                lbl_proj    = "   ──   projected: ".bright_yellow(),
+                lbl_proj    = "   ──   ".bright_yellow(),
                 val_proj    = value_proj,
                 lbl_end     = " \n"
             );
