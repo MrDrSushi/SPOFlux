@@ -66,10 +66,10 @@ The SharePoint Online List template can be found in folder "Data", there is a Po
    "client_id": "XXXXXXXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
    **- Client Secret of the registered Entra App**  
-   "client_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+   "client_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  
 
-   **- Thumbprint of the Certificate of the registered Entra App**
-   "client_thumbprint": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+   **- Thumbprint of the Certificate of the registered Entra App**  
+   "client_thumbprint": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  
 
    **- Name of registered Entra App**  
    "entra_applicationname": "Entra Application Name"  
