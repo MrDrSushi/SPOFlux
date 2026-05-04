@@ -37,6 +37,55 @@ This project serves as a proof-of-concept for developers interested in:
 
 The SharePoint Online List template can be found in folder "Data", there is a PowerShell script to quickly create the list in your tenant or you can simply upload the template and create the list manually.
 
+1) Copy the following files from the **Data** folder at the same location of the SPOFlux.exe:
+
+- settings.json
+- world-data-Airports.csv
+- world-data-Countries.csv
+- world-data-Locations.csv
+- world-data-Ports.csv
+
+2) Edit the SETTINGS.JSON to match the configuration of your M365 Tenant:
+
+   **- URL for your SharePoint Online, also know as the SharePoint Tenant: contoso.sharepoint.com**  
+   "SPORootSite": "tenant-name.sharepoint.com"  
+   
+   **- The name of your SPO Site Collection: SalesTeam**  
+   "SPOSite": "site-name"  
+
+   **- The name of the SPO List to be used: Orders**  
+   "SPOList": "list-name"  
+
+   **- Tenant ID - can be found at the Azure Portal -> Entra**  
+   "tenant_id": "XXXXXXXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX"  
+   
+   **- Tenant URL - can be found at the Azure Portal -> Entra**  
+   "tenant_domain": "tenant-domain.com"  
+
+   **- ID of the registered Entra App**  
+   "client_id": "XXXXXXXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX"
+
+   **- Client Secret of the registered Entra App**  
+   "client_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+   **- Thumbprint of the Certificate of the registered Entra App**
+   "client_thumbprint": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+   **- Name of registered Entra App**  
+   "entra_applicationname": "Entra Application Name"  
+
+   **- Password of certificate for the registered Entra App**  
+   "certificate_password": "Entra App Password"  
+
+   **- When set to "true" SPOFlux.exe will create items in SPO, otherwise will just output to console (simulated mode)**  
+   "soft_run": true  
+
+   **- The total number of records to be created, the program is configured to batch 20 records per request**  
+   "total_records" : 1000  
+   
+  
+  
+
 ## License
 
 MIT License
