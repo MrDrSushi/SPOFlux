@@ -23,7 +23,7 @@ This project serves as a proof-of-concept for developers interested in:
 
 - **Rust-based**: Compiled for performance, safety, and reliability
 - **Graph API Integration**: Direct integration with Microsoft Graph API for SharePoint Online operations
-- **Async Support**: Non-blocking operations for scalable API calls
+- **Async Support**: Non-blocking operations for scalable API calls (Tokio crate)
 - **Type-Safe**: Leveraging Rust's type system for compile-time guarantees
 
 ## Technologies
@@ -35,11 +35,11 @@ This project serves as a proof-of-concept for developers interested in:
 
 ## Getting Started
 
-(Add installation, configuration, and usage instructions as you develop the project)
+The SharePoint Online List template can be found in folder "Data", there is a PowerShell script to quickly create the list in your tenant or you can simply upload the template and create the list manually.
 
 ## License
 
-(Specify your license here)
+MIT License
 
 ## Contributing
 
