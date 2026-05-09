@@ -9,7 +9,7 @@ use reqwest::Client;
 
 use crate::data::{SettingsJSON, AzureToken, UserFields};
 
-// macro for random substituion values, it returns a value from an array using a given random number
+// macro for random substitution values, it returns a value from an array using a given random number
 
 #[macro_export]
 macro_rules! random {
@@ -61,7 +61,7 @@ pub fn duration_fmt(duration: std::time::Duration, mask: &str) -> String {
 }
 
 //
-//  Gerneral Functions
+//  General Functions
 //
 
 pub fn truncate_to_msecs(d: Duration) -> u128 {
@@ -142,7 +142,7 @@ pub fn generate_shipment_comment(seed: &mut ThreadRng) -> String {
     const COMPLAINTS: &[&str] = &[
         "The forklift is haunted.", "I'm not paid enough for this.", "Someone ate my labeled yogurt.",
         "The warehouse cat has claimed this as a bed.", "It's too early for this.", "The printer is screaming again.",
-        "The lights are flickering in Morse code.", "The breakroom microwave smells like burnt hair.", "My boots are squeaking.",
+        "The lights are flickering in Morse code.", "The break room microwave smells like burnt hair.", "My boots are squeaking.",
         "The roof is leaking green liquid.", "Someone replaced the water in the cooler with tea.", "The walls are sweating.",
         "I've forgotten what sunlight looks like.", "The vending machine took my last dollar.", "The radio only plays polka."
     ];

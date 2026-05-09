@@ -116,7 +116,7 @@ async fn main() -> Result<()> {
     let mut batch_counter = 0;
     let mut payload       = json!({"requests": []});
 
-    //  Heavy collections: Locstions
+    //  Heavy collections: Locations
     //  It is a pre-processing to save time during the loop
 
     let users_id_collection : Vec<i64> = users.iter().map(|u| u.id).collect();
@@ -133,7 +133,7 @@ async fn main() -> Result<()> {
     //  Starts the loop for the creation of the records (payload creation and endpoint post request)
     //
 
-    println!("{}","\n       ▶▶▶▶  Begining batch processing . . . \n");
+    println!("{}","\n       ▶▶▶▶  Beginning batch processing . . . \n");
 
     for loop_count in 1..=total_records {
 
@@ -316,7 +316,7 @@ async fn main() -> Result<()> {
                     println!("{}", format!("              ▶▶ New token acquired, expires at {} \n", token.expires_datetime.format("%I:%M:%S %p")).bright_green());    // .format("%a, %d %b %Y %I:%M:%S %p")
                 }
 
-                // sends the requestg to the endpoint
+                // sends the request to the endpoint
 
                 match send_data(&client, &token.access_token, &payload, true, leading_zeroes).await {
                     true => {
@@ -363,10 +363,10 @@ async fn main() -> Result<()> {
                 value_status = format!("{}","   ");
             }
             else if truncate_to_msecs(avg_request_time) > truncate_to_msecs(last_avg_request_time) {
-                value_status = format!("{}","  🡵".bright_red());
+                value_status = format!("{}","  ↗".red());
             }
             else if truncate_to_msecs(avg_request_time) < truncate_to_msecs(last_avg_request_time) {
-                value_status = format!("{}","  🡶".bright_blue());
+                value_status = format!("{}","  ↙".blue());
             }
 
             // println!(
@@ -425,7 +425,7 @@ async fn main() -> Result<()> {
                 val_batch   = value_batch,
                 lbl_of      = " of ".bright_yellow(),
                 val_tbatch  = value_tbatch,
-                lbl_req     = "          request: ".bright_yellow(),
+                lbl_req     = "      request: ".bright_yellow(),
                 val_req     = value_req,
                 lbl_time    = "   ──   time: ".bright_yellow(),
                 val_time    = value_time,
@@ -438,7 +438,7 @@ async fn main() -> Result<()> {
                 lbl_status  = value_status,
                 lbl_eta     = "   ──   eta: ".bright_yellow(),
                 val_eta     = value_eta,
-                lbl_proj    = "   ──   projected: ".bright_yellow(),
+                lbl_proj    = "   ──   ".bright_yellow(),
                 val_proj    = value_proj,
                 lbl_end     = " \n"
             );
