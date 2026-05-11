@@ -12,7 +12,7 @@ A demo project showcasing integration between **Rust**, **SharePoint Online**, a
 - [License](#license)
 - [Contributing](#contributing)
 
-## 🎯 Purpose
+## Purpose 🎯
 
 SPOFlux is a demonstration project designed to explore and showcase how to build efficient, modern applications that interact with Microsoft's cloud ecosystem. Specifically, it demonstrates best practices for:
 
@@ -21,7 +21,7 @@ SPOFlux is a demonstration project designed to explore and showcase how to build
 - Handling enterprise-grade document management and collaboration workflows
 - Implementing secure, scalable patterns for cloud-native applications
 
-## 🔍 Overview
+## Overview 🔍
 
 This project serves as a proof-of-concept for developers interested in:
 
@@ -29,7 +29,7 @@ This project serves as a proof-of-concept for developers interested in:
 2. **Graph API Integration**: Exploring how to leverage Microsoft Graph API to access SharePoint Online resources programmatically.
 3. **Enterprise Workflows**: Demonstrating practical examples of document operations, metadata management, and collaboration features in SharePoint.
 
-## ⭐ Key Features
+## Key Features ⭐
 
 - **Rust-based**: Compiled for performance, safety, and reliability.
 - **Graph API Integration**: Direct integration with Microsoft Graph API for SharePoint Online operations.
