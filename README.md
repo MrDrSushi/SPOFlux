@@ -76,9 +76,16 @@ The SharePoint Online List template can be found in the "Data" folder. There is 
        "client_thumbprint": "xxxxx", // Thumbprint of the Certificate of the registered Entra App
        "entra_applicationname": "Entra Application Name", // Name of registered Entra App
        "certificate_password": "Entra App Password", // Password of certificate for the registered Entra App
-       "soft_run": true, // When set to "true" SPOFlux.exe will create items in SPO, otherwise will just output to console (simulated mode)
-       "total_records": 1000 // The total number of records to be created; the program is configured to batch 20 records per request
+       "soft_run": true, // When  "true" items will be created in  SPO, otherwise result just output to console
+       "total_records": 1000 // The total number of records to be created  (20 records per batch)
    }
+   ```
+3. Create the SharePoint Online List from list-template-orders.xml using PnP PoweShell:
+
+   ```PowerShell
+   
+      Invoke-PnPProvisioningTemplate -Path ".\list-template-orders.xml"
+   
    ```
 
 <a id="license"></a>
