@@ -12,7 +12,8 @@ A demo project showcasing integration between **Rust**, **SharePoint Online**, a
 - [License](#license)
 - [Contributing](#contributing)
 
-## Purpose 🎯
+<a id="purpose"></a>
+## 🎯 Purpose
 
 SPOFlux is a demonstration project designed to explore and showcase how to build efficient, modern applications that interact with Microsoft's cloud ecosystem. Specifically, it demonstrates best practices for:
 
@@ -21,7 +22,8 @@ SPOFlux is a demonstration project designed to explore and showcase how to build
 - Handling enterprise-grade document management and collaboration workflows
 - Implementing secure, scalable patterns for cloud-native applications
 
-## Overview 🔍
+<a id="overview"></a>
+## 🔍 Overview
 
 This project serves as a proof-of-concept for developers interested in:
 
@@ -29,13 +31,15 @@ This project serves as a proof-of-concept for developers interested in:
 2. **Graph API Integration**: Exploring how to leverage Microsoft Graph API to access SharePoint Online resources programmatically.
 3. **Enterprise Workflows**: Demonstrating practical examples of document operations, metadata management, and collaboration features in SharePoint.
 
-## Key Features ⭐
+<a id="key-features"></a>
+## ⭐ Key Features
 
 - **Rust-based**: Compiled for performance, safety, and reliability.
 - **Graph API Integration**: Direct integration with Microsoft Graph API for SharePoint Online operations.
 - **Async Support**: Non-blocking operations for scalable API calls (using the Tokio crate).
 - **Type-Safe**: Leveraging Rust's type system for compile-time guarantees.
 
+<a id="technologies"></a>
 ## 🛠️ Technologies
 
 - **Language**: Rust
@@ -43,6 +47,7 @@ This project serves as a proof-of-concept for developers interested in:
 - **Cloud Service**: SharePoint Online (Office 365)
 - **Architecture**: Async/await pattern with modern error handling
 
+<a id="getting-started"></a>
 ## 🚀 Getting Started
 
 The SharePoint Online List template can be found in the "Data" folder. There is a PowerShell script to quickly create the list in your tenant, or you can simply upload the template and create the list manually.
@@ -76,13 +81,14 @@ The SharePoint Online List template can be found in the "Data" folder. There is 
    }
    ```
 
+<a id="license"></a>
 ## 📝 License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-
+<a id="contributing"></a>
 ## 🤝 Contributing
 
 Contributions, suggestions, and feedback are welcome! Feel free to open issues or pull requests.
